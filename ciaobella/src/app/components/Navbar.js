@@ -16,9 +16,9 @@ const Navbar = () => {
         <div className={styles.logo}>Mi Sitio</div>
         <ul className={`${styles.navLinks} ${isMenuOpen ? styles.active : ''}`}>
           <li><Link href="/">Inicio</Link></li>
-          <li><Link href="/#services">Servicios</Link></li>
-          <li><Link href="/#about">Nosotros</Link></li>
-          <li><Link href="/#contact">Contacto</Link></li>
+          <li><Link href="/#servicio">Servicios</Link></li>
+          <li><Link href="/#nosotros">Nosotros</Link></li>
+          <li><Link href="/#contacto">Contacto</Link></li>
         </ul>
         <div className={styles.hamburger} onClick={toggleMenu}>
           <div className={styles.bar}></div>
