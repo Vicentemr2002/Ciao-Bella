@@ -5,7 +5,7 @@
 /* Header */
 .header {
     background-color: #333;
-    padding: 10px 20px;
+    padding: 20px 20px;
   }
   
   .navbar {
@@ -35,6 +35,14 @@
     text-decoration: none;
     color: white;
     font-size: 18px;
+    padding: 8px 16px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .navLinks a:hover{
+    background-color: black;
+    color: white;
   }
   
   /* Menú hamburguesa */
