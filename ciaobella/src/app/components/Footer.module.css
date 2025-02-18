@@ -1,0 +1,14 @@
+.footer{
+    background-color: #000000;
+    padding: 5rem 0;
+    margin-top: auto;
+    color: white;
+}
+
+.copyright{
+   display: flex;
+   justify-content: center;
+   color: white;
+   font-size: 0.8rem;
+   margin-top: 2rem;
+}

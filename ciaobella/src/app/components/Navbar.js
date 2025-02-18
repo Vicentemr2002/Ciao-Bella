@@ -2,6 +2,7 @@
 import React, { Children, useState } from 'react'
 import styled from 'styled-components';
 import BurguerBottom from './burguer';
+import WhatsAppButton from './icon-whatsapp';
 
 function Navbar() {
 
@@ -22,6 +23,7 @@ function Navbar() {
           <a onClick={() => setClicked(false)} href="#nosotros">Nosotros</a>
           <a onClick={() => setClicked(false)} href="#contactos">Contactos</a>
         </div>
+        <WhatsAppButton />
         <div className="burguer">
           <BurguerBottom clicked={clicked} handleClick={handleClick} />
         </div>
@@ -39,12 +41,21 @@ const Navcontainer = styled.nav`
   h2{
    font-weight: 300;
    font-size: 38px;
-   span{
+    }span{
    font-weight: bold;
    font-size: 46px;
    color: #d2b4de;
-   }
-  } 
+  }
+ 
+    @media (max-width: 768px) {
+    h2 {
+      font-size: 24px;  
+    }
+
+    span {
+      font-size: 30px; 
+    }
+  }
 
   padding: .6rem;
   background-color: #f4ecf7;
@@ -57,11 +68,21 @@ const Navcontainer = styled.nav`
   color: black;
   text-decoration: none;
   margin-right: 1rem;
+  transition: all 0.4s ease;
   }
+  a:hover{
+  color: #d2b4de !important;
+  transition: all 0.3s ease;
+  }
+
+ a:focus, a:active {
+  color: #d2b4de !important;
+}
 
 
   .links{
   position: absolute;
+  z-index: 1;
   top: -700px;
   left: -2000px;
   right: 0;
@@ -78,7 +99,7 @@ const Navcontainer = styled.nav`
      position: initial;
      margin: 0;
      a{
-      font-size: 1.2rem;
+      font-size: 1rem;
       color: black;
       display: inline;
      }
