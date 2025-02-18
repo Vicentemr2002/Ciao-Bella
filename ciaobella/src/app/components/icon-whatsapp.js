@@ -1,4 +1,4 @@
-import { FaWhatsapp, FaInstagram  } from 'react-icons/fa';
+import { FaWhatsapp, FaInstagram, FaFacebookF  } from 'react-icons/fa';
 
 const WhatsAppButton = () => {
     const phoneNumber = '541123924974';
@@ -42,6 +42,26 @@ const WhatsAppButton = () => {
                 <FaInstagram size={22} style={{ color: ' black' }} />
                 
             </a>
+
+            <a
+                href="https://www.facebook.com/tu_usuario"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    backgroundColor: 'white',
+                    padding: '8px 10px',
+                    borderRadius: '50px',
+                    boxShadow: '0 4px 8px color: white',
+                    cursor: 'pointer',
+                }}
+            >
+                <FaFacebookF size={22} style={{ color: ' black' }} />
+                
+            </a>
+
 
         </div>
     );
